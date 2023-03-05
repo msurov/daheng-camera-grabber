@@ -1,0 +1,7 @@
+if (UNIX)
+    include("${CMAKE_CURRENT_LIST_DIR}/gxi-config-linux.cmake")
+elseif (WIN32)
+    include("${CMAKE_CURRENT_LIST_DIR}/gxi-config-win32.cmake")
+else()
+    message(error "the system is not supported yet")
+endif()
